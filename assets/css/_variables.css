@@ -1,0 +1,23 @@
+:root {
+  --text-xs: 8px;
+  --text-sm: 16px;
+  --text-m: 22px;
+  --text-l: 32px;
+  --text-xl: 54px;
+  --lineHeight: 1.4em;
+
+  --primaryColor: #d0a47d;
+  --secondaryColor: #a3a598;
+  --darkColor: #012d32;
+  --lightColor: #fff;
+
+  /* Dark mode*/
+  --black: #000;
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --unit: 24px;
+    --lineHeight: 2em;
+  }
+}

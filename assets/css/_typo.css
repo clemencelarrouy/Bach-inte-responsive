@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+
+
+html{
+    font-size: var(--text-sm);
+    background-color: var(--lightColor);
+
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    line-height:var(--lineHeight);
+    color: var(--darkColor);
+}
+
+a {
+  text-decoration : none ;
+  transition: all 0.3ms;
+  color: var(--secondaryColor);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin-bottom: var(--lineHeight);
+    line-height: normal;
+}
+
+h1{
+    font-size: var(--text-xl);
+    font-weight: 600;
+}
+
+h2{
+    font-size: var(--text-l);
+    font-weight: 400;
+}
+
+h3{
+  font-size: var(--text-m);
+  font-weight: 400;
+}
+
+p{
+  font-size: var(--text-sm);
+}
+
+ul{
+    padding-left: 1em;
+}
+li{
+    list-style-type:none;
+    margin-bottom: 1em;
+}
+a:hover, a:active{
+    color: var(--darkColor);
+}
+
+/* Darkmode*/
+body.dark {
+  background-color: black;
+  transition: background 0.5s; }
+
+.dark h2, .dark h3, .dark h4, .dark h5,.dark  h6,.dark p, .dark ul, .dark li , .dark label , .dark span  {
+  color: var(--lightColor);
+}
+
+.dark .hero-image .text-overlay.text-bottom{
+  background: #2d2d2d75;
+}
+
+@media (max-width: 1024px) {
+
+
+h1{
+  font-size: var(--text-l);
+  margin-bottom : 32px ;
+} }

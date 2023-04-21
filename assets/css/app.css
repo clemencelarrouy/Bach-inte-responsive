@@ -1,0 +1,15 @@
+@import url('_variables.css');
+@import url('_colors.css');
+@import url('_images.css');
+@import url('_typo.css');
+@import url('_flex.css');
+@import url('_menu.css');
+@import url('_space.css');
+@import url('_form.css');
+@import url('_button.css');
+@import url('_banner.css');
+
+*{
+    box-sizing: border-box;
+    transition: color 0.5s;
+}

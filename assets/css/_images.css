@@ -1,0 +1,117 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  height: 450px;
+}
+
+.hero-image .text-overlay {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  transform: unset;
+  background: #ffffff75;
+  border-radius: 10px;
+  transition: background 0.5s;
+}
+
+.hero-image .text-overlay.text-bottom :last-child {
+  margin-bottom: 0;
+}
+
+/* slider */
+.slider.big {
+  height: 450px;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.slide:nth-of-type(even) {
+  background-color: rgb(250, 246, 212);
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 450px;
+  scroll-snap-align: center;
+  margin-right: 0px;
+  box-sizing: border-box;
+  background: white;
+  transform-origin: center center;
+  transform: scale(1);
+}
+
+.slide a {
+  background: none;
+  border: none;
+}
+
+a.slide__prev,
+.slider.big::before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 5%;
+}
+
+a.slide__next,
+.slider.big::after {
+  -webkit-transform: rotate(-45deg);
+  right: 5%;
+}
+
+.slider.big::before,
+.slider.big::after,
+.slide__prev,
+.slide__next {
+  position: absolute;
+  top: 48%;
+  width: 30px;
+  height: 30px;
+  border: solid var(--lightColor);
+  border-width: 0 2px 2px 0;
+}
+
+.slider.big::before,
+.slider.big::after {
+  content: "";
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+}
+
+#slides__1 {
+  background-image: url("../images/hero-w1200.jpg");
+  background-size: cover;
+}
+
+#slides__2,
+#slides__4 {
+  background-image: url("../images/7825644-vintage-vieille-ville-rue-noir-et-blanc-photo.jpg");
+  background-size: cover;
+}
+
+#slides__3 {
+  background-image: url("../images/cette-vieille-photo-en-noir-et-blanc-surprend-a-cause-d-un-element-troublant.jpg");
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .hero-image .text-overlay {
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 65%;
+  }
+}

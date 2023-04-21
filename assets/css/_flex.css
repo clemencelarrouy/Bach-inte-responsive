@@ -1,0 +1,6 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  --gap: calc(var(--text-sm) * 1);
+  gap: var(--gap);
+}
