@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <script src="assets/js/app.js" defer></script>
+    <title>Code Paper</title>
+  </head>
+  <body class="body">
+    <!-- Main part -->
+    <main>
+      <!-- Main menu -->
+      <nav class="main-menu close">
+        <!-- test menu mobile -->
+        <div class="toggle-menu box side_menu_button menu">
+          <div class="popup_menu normal">
+            <span class="popup_menu_inner">
+              <span class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="menu">
+                <span id="open">Menu</span>
+                <span id="close">Fermer</span>
+              </span>
+            </span>
+          </div>
+        </div>
+        <img src="assets/images/logo.svg" alt="logo Paper Code" />
+        <div class="content-wrapper menu">
+          <a href="components.html">Composants graphiques</a>
+          <a href="#">Lien 2</a>
+          <a href="#">Lien 3</a>
+          <a href="#">Lien 4</a>
+          <button class="toggle-dark button">Dark mode</button>
+        </div>
+      </nav>
+
+      <!-- Section hero -->
+      <section class="hero-image">
+        <div class="slider-container">
+          <div class="slider big">
+            <div class="slides">
+              <div id="slides__1" class="slide">
+                <source
+                  srcset="assets/images/hero-w1800.jpg"
+                  media="(min-width:1201px)"
+                />
+                <a class="slide__prev" href="#slides__4" title="Next"></a>
+                <a class="slide__next" href="#slides__2" title="Next"></a>
+              </div>
+              <div id="slides__2" class="slide">
+                <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                <a class="slide__next" href="#slides__3" title="Next"></a>
+              </div>
+              <div id="slides__3" class="slide">
+                <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                <a class="slide__next" href="#slides__4" title="Next"></a>
+              </div>
+              <div id="slides__4" class="slide">
+                <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                <a class="slide__next" href="#slides__1" title="Prev"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-wrapper">
+          <article class="text-overlay text-bottom p-3">
+            <h1>Code Paper</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="button">S'abonner</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section Intro -->
+
+      <section class="content-wrapper p-4">
+        <h2>Des articles de qualité, chaque mois.</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          accusantium expedita quae, in tenetur nesciunt sapiente eveniet quos
+          nihil quod unde maiores natus eum facere ratione fugiat sed explicabo
+          cumque.
+        </p>
+      </section>
+
+      <!-- Section choose form -->
+      <section class="content-wrapper p-4">
+        <article class="banner p-2">
+          <h2>Choisissez votre abonnement !</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            accusantium expedita quae, in tenetur nesciunt sapiente eveniet quos
+            nihil quod unde maiores natus eum facere ratione fugiat sed
+            explicabo cumque.
+          </p>
+
+          <div class="block-switch">
+            <span> Format papier </span>
+            <label class="switch">
+              <input class="toggle-form" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span> Format numérique </span>
+          </div>
+        </article>
+      </section>
+
+      <!-- Section Form -->
+      <section class="content-wrapper p-4 forms">
+        <article class="form-papper display-block p-2">
+          <div class="flex-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-book"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+              <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+              <path d="M3 6l0 13"></path>
+              <path d="M12 6l0 13"></path>
+              <path d="M21 6l0 13"></path>
+            </svg>
+            <h3>Format Papier</h3>
+          </div>
+          <form id="mainForm" action="https://duckduckgo.com">
+            <!-- First name -->
+            <div class="box-input">
+              <label>Prénom</label>
+              <input type="text" name="q" placeholder="Votre prénom" />
+            </div>
+
+            <!-- Last name -->
+            <div class="box-input">
+              <label>Nom</label>
+              <input type="text" name="LastName" placeholder="Votre nom" />
+            </div>
+
+            <!-- Mail -->
+            <div class="box-input">
+              <label>e-Mail</label>
+              <input type="email" name="LastName" placeholder="Votre e-mail" />
+            </div>
+
+            <!-- Adresse -->
+            <div class="box-input">
+              <label>Adresse</label>
+              <input type="text" name="address" placeholder="Votre adresse" />
+            </div>
+
+            <!-- Last name -->
+            <div class="box-input">
+              <label>Code postal</label>
+              <input
+                type="number"
+                min="0"
+                max="99999"
+                step="1"
+                name="postal-code"
+                placeholder="Votre code postal"
+              />
+            </div>
+
+            <!-- Last name -->
+            <div class="box-input">
+              <label>Ville</label>
+              <input type="text" name="city" placeholder="Votre ville" />
+            </div>
+
+            <!-- Legals -->
+            <div class="box-input">
+              <input type="checkbox" name="legals" id="legals" />
+              <label for="legals"
+                >J'ai lu et j'accepte les mentions légales</label
+              >
+              <span class="block"> Tous les champs sont obligatoires</span>
+            </div>
+
+            <!-- Actions -->
+            <div class="box-input send-form">
+              <button type="submit" class="button">S'abonner</button>
+            </div>
+          </form>
+        </article>
+        <article class="form-digital display-none p-2">
+          <div class="flex-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-device-imac"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M3 4a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-12z"
+              ></path>
+              <path d="M3 13h18"></path>
+              <path d="M8 21h8"></path>
+              <path d="M10 17l-.5 4"></path>
+              <path d="M14 17l.5 4"></path>
+            </svg>
+            <h3>Format Numérique</h3>
+          </div>
+          <form id="otherForm" action="https://duckduckgo.com">
+            <!-- First name -->
+            <div class="box-input">
+              <label>Prénom</label>
+              <input type="text" name="q" placeholder="Votre prénom" />
+            </div>
+
+            <!-- Last name -->
+            <div class="box-input">
+              <label>Nom</label>
+              <input type="text" name="LastName" placeholder="Votre nom" />
+            </div>
+
+            <!-- Mail -->
+            <div class="box-input">
+              <label>e-Mail</label>
+              <input type="email" name="LastName" placeholder="Votre e-mail" />
+            </div>
+
+            <!-- Legals -->
+            <div class="box-input">
+              <input type="checkbox" name="legals" id="legals" />
+              <label for="legals"
+                >J'ai lu et j'accepte les mentions légales</label
+              >
+              <span class="block"> Tous les champs sont obligatoires</span>
+            </div>
+
+            <!-- Actions -->
+            <div class="box-input send-form">
+              <button type="submit" class="button">S'abonner</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark p-4 flex-container">
+      <!-- Socials menu -->
+      <ul class="content-wrapper flex-container">
+        <li>
+          <a href="#"
+            ><img src="assets/images/facebook.svg" alt="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/images/twitter.svg" alt="twitter" /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="assets/images/instagram.svg" alt="instagram"
+          /></a>
+        </li>
+      </ul>
+
+      <!-- Legal menu -->
+      <ul class="content-wrapper">
+        <li><a href="#">CGV</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
